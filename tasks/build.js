@@ -7,22 +7,6 @@ module.exports = function(grunt) {
     var path = require("path");
     var slim = require("../lib/slim.js");
 
-    function copy_recusive( source, pattern, output ){
-        var files = grunt.file.expand({}, [source+pattern]);
-        for( var n in files ){
-            var f = files[n].substring(source.length)
-            if( f != "" ){
-                if( grunt.file.isDir(files[n]) ){
-                    grunt.file.mkdir( output+"/"+f )
-                }else{
-                    var output_f = (output+"/"+f).replace("//","/")
-                    grunt.file.copy(source+"/"+f, output_f)
-                    grunt.verbose.ok("copying "+source+"/"+f+" "+output_f);
-                }
-            }
-        }
-    }
-    
     grunt.registerMultiTask("phantomizer-export-slim", "", function () {
         var done = this.async();
 
