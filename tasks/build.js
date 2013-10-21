@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         grunt.log.ok("exporting to "+export_dir );
         grunt.file.mkdir( export_dir );
 
-        var source = slim.www_vendors_path;
+        var source = slim.documentroot_path;
         var files = grunt.file.expand({}, [source+"**"]);
         for( var n in files ){
             var f = files[n].substring(source.length)
