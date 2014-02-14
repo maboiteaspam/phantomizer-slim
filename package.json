@@ -1,21 +1,21 @@
 {
-    "name": "phantomizer-slim",
-    "version": "0.1.5",
-    "private": true,
-    "description": "Provide Slim php framework integration",
-    "keywords": "",
-    "bugs": {
-        "url": "http://github.com/maboiteaspam/phantomizer-slim/issues",
-        "email": "none@host.com"
-    },
-    "license": "mit",
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/maboiteaspam/phantomizer-slim.git"
-    },
-    "main": "lib/slim.js",
-    "dependencies": {
-        "grunt": "0.4.x"
-    },
-    "devDependencies": {}
+  "name": "phantomizer-slim",
+  "version": "0.1.5",
+  "private": true,
+  "description": "Provide Slim php framework integration",
+  "keywords": "",
+  "bugs": {
+    "url": "http://github.com/maboiteaspam/phantomizer-slim/issues",
+    "email": "none@host.com"
+  },
+  "license": "mit",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/maboiteaspam/phantomizer-slim.git"
+  },
+  "main": "lib/slim.js",
+  "dependencies": {
+    "grunt": "0.4.x"
+  },
+  "devDependencies": {}
 }
